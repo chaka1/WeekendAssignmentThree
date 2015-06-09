@@ -1,0 +1,43 @@
+<RelativeLayout android:id="@+id/asos_navigation_drawer_fragment_rl_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:clickable="true"
+
+    android:layout_height="match_parent" android:background="@color/myDrawerBackground">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mens"
+            android:id="@+id/asos_navigation_drawer_fragment_tv_mens_text"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/womens"
+            android:id="@+id/asos_navigation_drawer_fragment_tv_womens_text"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/asos_navigation_drawer_fragment_rv_categories_list"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="vertical"/>
+</RelativeLayout>

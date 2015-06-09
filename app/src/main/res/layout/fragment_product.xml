@@ -1,0 +1,57 @@
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:padding="16dp"
+tools:context=".ProductFragment">
+
+    <!--<android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/product_fragment_view_pager_images">
+
+    </android.support.v4.view.ViewPager>-->
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/product_fragment_view_flipper_images"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_fragment_tv_item_name"
+        android:layout_below="@+id/product_fragment_view_flipper_images"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_fragment_tv_item_price"
+        android:layout_below="@+id/product_fragment_tv_item_name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_fragment_tv_item_description"
+        android:layout_below="@+id/product_fragment_tv_item_price"/>
+
+
+    <com.google.android.gms.plus.PlusOneButton
+        xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
+        android:id="@+id/plus_one_button" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" plus:size="standard" plus:annotation="inline"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_fragment_fab_add_to_basket"
+        android:src="@drawable/ic_add_shopping_cart_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
